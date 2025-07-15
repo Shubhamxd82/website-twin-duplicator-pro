@@ -78,11 +78,11 @@ const Index = () => {
           
           {/* Profile section */}
           <div className="text-center space-y-4 animate-fade-in">
-            <div className="relative inline-block">
+            <div className="relative inline-block animate-float">
               <img 
                 src={avatarImage} 
                 alt="Shubham"
-                className="w-24 h-24 rounded-full border-4 border-white/30 shadow-xl animate-float"
+                className="w-24 h-24 rounded-full border-4 border-white/30 shadow-xl"
               />
               {/* Online status indicator */}
               <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-lg"></div>
