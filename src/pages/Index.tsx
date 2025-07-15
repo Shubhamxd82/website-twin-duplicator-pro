@@ -84,6 +84,8 @@ const Index = () => {
                 alt="Shubham"
                 className="w-24 h-24 rounded-full border-4 border-white/30 shadow-xl animate-float"
               />
+              {/* Online status indicator */}
+              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-lg"></div>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-text-white mb-1">
