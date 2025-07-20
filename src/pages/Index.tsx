@@ -1,7 +1,6 @@
-import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music } from 'lucide-react';
+import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign } from 'lucide-react';
 import { LinkCard } from '@/components/LinkCard';
 import { SocialIcon } from '@/components/SocialIcon';
-import { ThemeToggle } from '@/components/ThemeToggle';
 import avatarImage from '@/assets/avatar.jpg';
 
 const Index = () => {
@@ -53,9 +52,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative">
+    <div className="min-h-screen bg-hero bg-cover bg-center bg-no-repeat relative">
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-pink-900/30 dark:from-purple-950/50 dark:via-blue-950/50 dark:to-pink-950/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-blue-900/40 to-pink-900/40"></div>
       
       {/* Subscribe button */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
@@ -64,9 +63,13 @@ const Index = () => {
         </button>
       </div>
 
-      {/* Dark mode toggle */}
+      {/* Share button */}
       <div className="absolute top-6 right-6 z-10">
-        <ThemeToggle />
+        <button className="w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-text-white hover:bg-white/30 transition-all duration-300">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+          </svg>
+        </button>
       </div>
 
       {/* Main content */}
