@@ -13,20 +13,23 @@ export const ThemeToggle = () => {
 
   if (!mounted) {
     return (
-      <button className="w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-text-white hover:bg-white/30 transition-all duration-300">
+      <button className="w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300">
         <Sun className="w-5 h-5" />
       </button>
     );
   }
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    console.log('Current theme:', theme);
+    const newTheme = theme === "dark" ? "light" : "dark";
+    console.log('Setting theme to:', newTheme);
+    setTheme(newTheme);
   };
 
   return (
     <button 
       onClick={toggleTheme}
-      className="w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-text-white hover:bg-white/30 transition-all duration-300"
+      className="w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
       aria-label="Toggle theme"
     >
       {theme === "dark" ? (
