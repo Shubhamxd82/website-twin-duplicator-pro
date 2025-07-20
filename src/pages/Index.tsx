@@ -53,9 +53,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-hero bg-cover bg-center bg-no-repeat relative">
+    <div className="min-h-screen bg-hero bg-cover bg-center bg-no-repeat relative dark:bg-background">
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-blue-900/40 to-pink-900/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-blue-900/40 to-pink-900/40 dark:from-purple-950/60 dark:via-blue-950/60 dark:to-pink-950/60"></div>
       
       {/* Subscribe button */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">

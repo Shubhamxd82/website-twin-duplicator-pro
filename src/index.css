@@ -78,6 +78,14 @@ All colors MUST be HSL.
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 268 83% 57%;
+
+    /* Dark mode custom design tokens */
+    --glass-bg: 0 0 0 / 0.3;
+    --glass-border: 255 255 255 / 0.1;
+    --gradient-start: 268 83% 47%;
+    --gradient-end: 330 81% 50%;
+    --text-white: 0 0% 100%;
+    --text-white-secondary: 0 0% 80%;
   }
 }
 
