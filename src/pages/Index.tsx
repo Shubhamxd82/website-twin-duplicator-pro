@@ -53,8 +53,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-hero bg-cover bg-center bg-no-repeat relative">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-blue-900/40 to-pink-900/40"></div>
       
       {/* Subscribe button */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
@@ -77,11 +75,15 @@ const Index = () => {
         <div className="w-full max-w-md space-y-8">
           
           {/* Profile section */}
-          <div className="text-center space-y-4 animate-fade-in">
-            <div className="relative inline-block animate-float">
+          <div className="text-center space-y-4 motion-safe:animate-fade-in motion-reduce:animate-none">
+            <div className="relative inline-block motion-safe:animate-float motion-reduce:animate-none" style={{ willChange: 'transform' }}>
               <img 
                 src={avatarImage} 
-                alt="Shubham"
+                alt="Shubham profile photo"
+                width={96}
+                height={96}
+                loading="eager"
+                decoding="async"
                 className="w-24 h-24 rounded-full border-4 border-white/30 shadow-xl"
               />
               {/* Online status indicator */}
@@ -124,7 +126,7 @@ const Index = () => {
           </div>
 
           {/* Beacons branding */}
-          <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: '1000ms' }}>
+          <div className="text-center mt-12 motion-safe:animate-fade-in motion-reduce:animate-none" style={{ animationDelay: '1000ms' }}>
             <div className="flex items-center justify-center gap-2 text-text-white-secondary">
               <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
                 <Sparkles className="w-4 h-4" />
