@@ -59,7 +59,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-overlay)',
-				'hero': "linear-gradient(135deg, rgba(123, 31, 162, 0.3) 0%, rgba(103, 58, 183, 0.3) 100%), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1280&q=60')"
+				'hero': "linear-gradient(135deg, rgba(123, 31, 162, 0.3) 0%, rgba(103, 58, 183, 0.3) 100%), url('/images/hero-1280.jpg')"
 			},
 			backdropBlur: {
 				'glass': '20px'
