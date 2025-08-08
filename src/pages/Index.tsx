@@ -1,4 +1,4 @@
-import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign } from 'lucide-react';
+import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign, Link2 } from 'lucide-react';
 import { LinkCard } from '@/components/LinkCard';
 import { SocialIcon } from '@/components/SocialIcon';
 import avatarImage from '@/assets/avatar.jpg';
@@ -27,6 +27,12 @@ const Index = () => {
       title: "For Movies & Webseries",
       description: "Join & Request (Everyone Can Join)",
       icon: Send,
+      href: "#"
+    },
+    {
+      title: "Link Shortener",
+      description: "Create, Share & Earn Money",
+      icon: Link2,
       href: "#"
     },
     {
@@ -94,7 +100,7 @@ const Index = () => {
                 Shubham :)
               </h1>
               <p className="text-text-white-secondary text-sm">
-                6 links
+                {links.length} links
               </p>
             </div>
 
