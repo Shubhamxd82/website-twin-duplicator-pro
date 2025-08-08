@@ -1,7 +1,8 @@
-import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign, Link2 } from 'lucide-react';
+import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign } from 'lucide-react';
 import { LinkCard } from '@/components/LinkCard';
 import { SocialIcon } from '@/components/SocialIcon';
 import avatarImage from '@/assets/avatar.jpg';
+import { LinkShortenerIcon } from '@/components/icons/LinkShortenerIcon';
 
 const Index = () => {
   const links = [
@@ -32,7 +33,7 @@ const Index = () => {
     {
       title: "Link Shortener",
       description: "Create, Share & Earn Money",
-      icon: Link2,
+      icon: LinkShortenerIcon,
       href: "#"
     },
     {
