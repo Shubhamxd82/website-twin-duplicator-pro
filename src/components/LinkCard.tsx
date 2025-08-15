@@ -18,7 +18,7 @@ export const LinkCard = ({ title, description, icon: Icon, href, delay = 0 }: Li
       className="group block w-full motion-safe:animate-fade-in motion-reduce:animate-none"
       style={{ animationDelay: `${delay}ms`, willChange: 'transform, opacity' }}
     >
-      <div className="glass-card relative flex items-center gap-4 p-4 rounded-2xl backdrop-blur-none hover:backdrop-blur-sm bg-glass border border-glass-border shadow-glass transition-all duration-300 hover:scale-105 hover:shadow-glow before:absolute before:inset-0 before:rounded-2xl before:opacity-0 active:before:opacity-100 active:before:animate-bg-glow">
+      <div className="glass-card flex items-center gap-4 p-4 rounded-2xl backdrop-blur-none hover:backdrop-blur-sm bg-glass border border-glass-border shadow-glass transition-all duration-300 hover:scale-105 hover:shadow-glow">
         <div className="flex-shrink-0">
           <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
             <Icon className="w-6 h-6 text-text-white" />
