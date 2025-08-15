@@ -58,7 +58,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-hero bg-cover bg-center bg-no-repeat relative">
+    <div className="min-h-screen bg-hero bg-cover bg-center bg-no-repeat bg-fixed relative">
       
       {/* Subscribe button */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
