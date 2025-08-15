@@ -2,8 +2,9 @@ import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Y
 import { LinkCard } from '@/components/LinkCard';
 import { SocialIcon } from '@/components/SocialIcon';
 import avatarImage from '@/assets/avatar.jpg';
+import { memo } from 'react';
 
-const Index = () => {
+const Index = memo(() => {
   const links = [
     {
       title: "Help and Support",
@@ -62,14 +63,14 @@ const Index = () => {
       
       {/* Subscribe button */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
-        <button className="px-6 py-2 bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full text-text-white font-medium text-sm hover:bg-white/30 transition-all duration-300">
+        <button className="px-6 py-2 bg-white/20 border border-white/30 rounded-full text-text-white font-medium text-sm hover:bg-white/30 transition-colors duration-200">
           Subscribe
         </button>
       </div>
 
       {/* Share button */}
       <div className="absolute top-6 right-6 z-10">
-        <button className="w-10 h-10 bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-text-white hover:bg-white/30 transition-all duration-300">
+        <button className="w-10 h-10 bg-white/20 border border-white/30 rounded-full flex items-center justify-center text-text-white hover:bg-white/30 transition-colors duration-200">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
           </svg>
@@ -77,24 +78,23 @@ const Index = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20" style={{ contentVisibility: 'auto' }}>
-        <div className="w-full max-w-md space-y-8">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20">
+        <div className="w-full max-w-md space-y-6">
           
           {/* Profile section */}
-          <div className="text-center space-y-4 motion-safe:animate-fade-in motion-reduce:animate-none">
-            <div className="relative inline-block motion-safe:animate-float motion-reduce:animate-none" style={{ willChange: 'transform' }}>
+          <div className="text-center space-y-4">
+            <div className="relative inline-block">
               <img 
                 src={avatarImage} 
                 alt="Shubham profile photo"
                 width={96}
                 height={96}
-                loading="eager"
-                fetchPriority="high"
+                loading="lazy"
                 decoding="async"
                 className="w-24 h-24 rounded-full border-4 border-white/30 shadow-xl"
               />
               {/* Online status indicator */}
-              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-lg"></div>
+              <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-text-white mb-1">
@@ -112,14 +112,13 @@ const Index = () => {
                   key={index}
                   icon={social.icon}
                   href={social.href}
-                  delay={index * 100}
                 />
               ))}
             </div>
           </div>
 
           {/* Links section */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             {links.map((link, index) => (
               <LinkCard
                 key={index}
@@ -127,13 +126,12 @@ const Index = () => {
                 description={link.description}
                 icon={link.icon}
                 href={link.href}
-                delay={(index + 1) * 150}
               />
             ))}
           </div>
 
           {/* Beacons branding */}
-          <div className="text-center mt-12 motion-safe:animate-fade-in motion-reduce:animate-none" style={{ animationDelay: '1000ms' }}>
+          <div className="text-center mt-8">
             <div className="flex items-center justify-center gap-2 text-text-white-secondary">
               <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
                 <Sparkles className="w-4 h-4" />
@@ -146,13 +144,13 @@ const Index = () => {
 
       {/* Bottom right CTA */}
       <div className="fixed bottom-6 right-6 z-20">
-        <button className="bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 text-text-white text-sm font-medium hover:bg-white/30 transition-all duration-300 flex items-center gap-2">
+        <button className="bg-white/20 border border-white/30 rounded-full px-4 py-2 text-text-white text-sm font-medium hover:bg-white/30 transition-colors duration-200 flex items-center gap-2">
           <Sparkles className="w-4 h-4" />
           Try for free!
         </button>
       </div>
     </div>
   );
-};
+});
 
 export default Index;
