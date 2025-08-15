@@ -62,14 +62,14 @@ const Index = () => {
       
       {/* Subscribe button */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
-        <button className="relative px-6 py-2 bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full text-text-white font-medium text-sm hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-full before:opacity-0 active:before:opacity-100 active:before:animate-bg-glow">
+        <button className="px-6 py-2 bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full text-text-white font-medium text-sm hover:bg-white/30 transition-all duration-300">
           Subscribe
         </button>
       </div>
 
       {/* Share button */}
       <div className="absolute top-6 right-6 z-10">
-        <button className="relative w-10 h-10 bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-text-white hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-full before:opacity-0 active:before:opacity-100 active:before:animate-bg-glow">
+        <button className="w-10 h-10 bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-text-white hover:bg-white/30 transition-all duration-300">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
           </svg>
@@ -146,7 +146,7 @@ const Index = () => {
 
       {/* Bottom right CTA */}
       <div className="fixed bottom-6 right-6 z-20">
-        <button className="relative bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 text-text-white text-sm font-medium hover:bg-white/30 transition-all duration-300 flex items-center gap-2 before:absolute before:inset-0 before:rounded-full before:opacity-0 active:before:opacity-100 active:before:animate-bg-glow">
+        <button className="bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 text-text-white text-sm font-medium hover:bg-white/30 transition-all duration-300 flex items-center gap-2">
           <Sparkles className="w-4 h-4" />
           Try for free!
         </button>
