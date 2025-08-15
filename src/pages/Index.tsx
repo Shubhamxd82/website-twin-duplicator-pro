@@ -82,7 +82,7 @@ const Index = () => {
           
           {/* Profile section */}
           <div className="text-center space-y-4 motion-safe:animate-fade-in motion-reduce:animate-none">
-            <div className="relative inline-block motion-safe:hover:animate-float motion-reduce:animate-none" style={{ willChange: 'transform' }}>
+            <div className="relative inline-block motion-safe:animate-float motion-reduce:animate-none" style={{ willChange: 'transform' }}>
               <img 
                 src={avatarImage} 
                 alt="Shubham profile photo"
