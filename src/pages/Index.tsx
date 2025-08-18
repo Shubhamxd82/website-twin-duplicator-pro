@@ -132,6 +132,15 @@ const Index = () => {
             ))}
           </div>
 
+          {/* Nexus Shubhu branding */}
+          <div className="text-center mt-12 motion-safe:animate-fade-in motion-reduce:animate-none" style={{ animationDelay: '1000ms' }}>
+            <div className="flex items-center justify-center gap-2 text-text-white-secondary">
+              <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
+                <Sparkles className="w-4 h-4" />
+              </div>
+              <span className="text-sm font-medium">Nexus Shubhu</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -143,15 +152,6 @@ const Index = () => {
         </button>
       </div>
 
-      {/* Nexus Shubhu branding - moved to bottom */}
-      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="flex items-center justify-center gap-2 text-text-white-secondary">
-          <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
-            <Sparkles className="w-4 h-4" />
-          </div>
-          <span className="text-sm font-medium">Nexus Shubhu</span>
-        </div>
-      </div>
     </div>
   );
 };
