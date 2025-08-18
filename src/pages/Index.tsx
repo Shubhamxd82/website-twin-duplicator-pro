@@ -142,7 +142,17 @@ const Index = () => {
             <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
               <Sparkles className="w-4 h-4" />
             </div>
-            <span className="text-sm font-medium">Nexus Shubhu</span>
+            <span className="text-sm font-medium">
+              Design with Love by{" "}
+              <a 
+                href="https://shubhlinks.in" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-text-white transition-colors duration-300"
+              >
+                Nexus_Shubhu
+              </a>
+            </span>
           </div>
         </div>
       </div>
