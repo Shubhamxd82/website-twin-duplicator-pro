@@ -136,7 +136,7 @@ const Index = () => {
       </div>
 
       {/* Footer - Nexus Shubhu branding */}
-      <div className="relative z-10 pb-8 pt-16">
+      <div className="relative z-10 pb-2 pt-16">
         <div className="text-center motion-safe:animate-fade-in motion-reduce:animate-none" style={{ animationDelay: '1000ms' }}>
           <div className="flex items-center justify-center gap-2 text-text-white-secondary">
             <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
