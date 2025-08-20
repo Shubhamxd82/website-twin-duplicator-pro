@@ -144,7 +144,7 @@ const Index = () => {
             </div>
             <span className="text-sm font-medium flex items-center justify-center gap-1">
               Design with{" "}
-              <Heart className="w-4 h-4 text-red-400 animate-pulse" />
+              <Heart className="w-4 h-4 text-red-400 fill-red-400 animate-pulse" />
               {" "}by{" "}
               <a 
                 href="https://shubhlinks.in" 
