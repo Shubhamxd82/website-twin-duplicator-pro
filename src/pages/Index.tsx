@@ -1,4 +1,4 @@
-import { Mail, Instagram, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign, Link2 } from 'lucide-react';
+import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign, Link2 } from 'lucide-react';
 import { LinkCard } from '@/components/LinkCard';
 import { SocialIcon } from '@/components/SocialIcon';
 import avatarImage from '@/assets/avatar.jpg';
@@ -52,6 +52,7 @@ const Index = () => {
   const socialLinks = [
     { icon: Mail, href: "mailto:hello@shubham.com" },
     { icon: Instagram, href: "https://instagram.com" },
+    { icon: Twitter, href: "https://twitter.com" },
     { icon: MessageCircle, href: "#" },
     { icon: Send, href: "#" }
   ];
@@ -153,8 +154,8 @@ const Index = () => {
               >
                 Nexus_Shubhu
               </a>
-              <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
-                <Sparkles className="w-4 h-4" />
+              <div className="w-5 h-5 bg-white/20 rounded-lg flex items-center justify-center">
+                <Sparkles className="w-3.5 h-3.5" />
               </div>
             </span>
           </div>
