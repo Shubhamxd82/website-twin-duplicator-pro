@@ -162,13 +162,6 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Bottom right CTA */}
-      <div className="fixed bottom-6 right-6 z-20">
-        <button className="bg-white/20 backdrop-blur-none md:backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 text-text-white text-sm font-medium hover:bg-white/30 transition-all duration-300 flex items-center gap-2">
-          <Sparkles className="w-4 h-4" />
-          Try for free!
-        </button>
-      </div>
 
     </div>
   );
