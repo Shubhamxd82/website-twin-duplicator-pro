@@ -142,8 +142,10 @@ const Index = () => {
             <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
               <Sparkles className="w-4 h-4" />
             </div>
-            <span className="text-sm font-medium">
-              Design with Love by{" "}
+            <span className="text-sm font-medium flex items-center justify-center gap-1">
+              Design with{" "}
+              <Heart className="w-4 h-4 text-red-400 animate-pulse" />
+              {" "}by{" "}
               <a 
                 href="https://shubhlinks.in" 
                 target="_blank" 
