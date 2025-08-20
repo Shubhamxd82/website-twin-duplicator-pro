@@ -1,4 +1,4 @@
-import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign, Link2 } from 'lucide-react';
+import { Mail, Instagram, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign, Link2 } from 'lucide-react';
 import { LinkCard } from '@/components/LinkCard';
 import { SocialIcon } from '@/components/SocialIcon';
 import avatarImage from '@/assets/avatar.jpg';
@@ -52,7 +52,6 @@ const Index = () => {
   const socialLinks = [
     { icon: Mail, href: "mailto:hello@shubham.com" },
     { icon: Instagram, href: "https://instagram.com" },
-    { icon: Twitter, href: "https://twitter.com" },
     { icon: MessageCircle, href: "#" },
     { icon: Send, href: "#" }
   ];
