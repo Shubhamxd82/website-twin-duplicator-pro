@@ -154,6 +154,9 @@ const Index = () => {
               >
                 Nexus_Shubhu
               </a>
+              <div className="w-6 h-6 bg-white/20 rounded-lg flex items-center justify-center">
+                <Sparkles className="w-4 h-4" />
+              </div>
             </span>
           </div>
         </div>
