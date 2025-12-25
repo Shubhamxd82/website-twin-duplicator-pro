@@ -1,7 +1,8 @@
 import { Mail, Instagram, Twitter, MessageCircle, Send, Heart, User, Sparkles, Youtube, Music, DollarSign, Link2 } from 'lucide-react';
 import { LinkCard } from '@/components/LinkCard';
 import { SocialIcon } from '@/components/SocialIcon';
-import avatarImage from '@/assets/avatar.jpg';
+// Avatar is preloaded from public folder for LCP optimization
+const avatarImage = '/images/avatar.jpg';
 
 const Index = () => {
   const links = [
