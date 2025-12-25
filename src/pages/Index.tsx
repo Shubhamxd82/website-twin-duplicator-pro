@@ -83,16 +83,19 @@ const Index = () => {
           {/* Profile section */}
           <div className="text-center space-y-4 motion-safe:animate-fade-in motion-reduce:animate-none">
             <div className="relative inline-block motion-safe:animate-float motion-reduce:animate-none" style={{ willChange: 'transform' }}>
-              <img 
-                src={avatarImage} 
-                alt="Shubham profile photo"
-                width={96}
-                height={96}
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                className="w-24 h-24 rounded-full border-4 border-white/30 shadow-xl"
-              />
+              <picture>
+                <img 
+                  src={avatarImage} 
+                  alt="Shubham profile photo"
+                  width={96}
+                  height={96}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  sizes="96px"
+                  className="w-24 h-24 rounded-full border-4 border-white/30 shadow-xl object-cover"
+                />
+              </picture>
               {/* Online status indicator */}
               <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-lg"></div>
             </div>
